@@ -9,4 +9,4 @@ server:
 
 spring:
   application:
-    name: service-show
+    name: service-client

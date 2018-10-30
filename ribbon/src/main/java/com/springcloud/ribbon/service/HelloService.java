@@ -16,7 +16,7 @@ public class HelloService {
     RestTemplate restTemplate;
 
     public String show() {
-        return restTemplate.getForObject("http://service-show/port", String.class);
+        return restTemplate.getForObject("http://service-client/port", String.class);
     }
 
 }
