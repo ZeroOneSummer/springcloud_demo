@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
- * @author Administrator
+ * @author jp
  * @Description: TODO
  * @date 2018/10/29 18:19
  */
