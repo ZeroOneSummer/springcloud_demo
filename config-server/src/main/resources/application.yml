@@ -1,6 +1,7 @@
 
 server:
   port: 8767
+
 spring:
   application:
     name: config-server
@@ -13,3 +14,9 @@ spring:
           username:   #Git仓库为公开仓库，可以不填写用户名和密码
           password:
       label: master   #配置仓库的分支
+
+#注册到eureka服务
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
