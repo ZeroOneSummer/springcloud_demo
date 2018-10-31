@@ -18,6 +18,7 @@ public class HelloController {
 
     @RequestMapping(value = "/port")
     public String show(){
+        System.out.println("-------由feign发起请求");
         return helloService.show();
     }
 
