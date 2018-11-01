@@ -5,3 +5,10 @@ spring:
     port: 5672
     username: guest
     password: guest
+
+#放开监控拦截，使http://localhost:8768/bus/refresh生效
+management:
+  security:
+    enabled: false
+
+
