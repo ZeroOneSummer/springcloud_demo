@@ -1,13 +1,14 @@
 
 #访问http://localhost:8761 进入管理界面
+#host文件添加 127.0.0.1 localhost   127.0.0.1 peer2    127.0.0.1 peer1
 server:
-  port: 8661
+  port: 8861
 
-spring:
-  profiles: peer2
 eureka:
   instance:
     hostname: peer2
   client:
+    registerWithEureka: false
+    fetchRegistry: false
     serviceUrl:
-      defaultZone: http://peer1:8761/eureka/
+      defaultZone: http://peer1:8661/eureka/
